@@ -3,11 +3,10 @@
 
 QC module for fastq files, based on validateFiles.
 * Input : a fastq file (either gzipped or not)
-* Output : a report file containing md5sum and validateFile error code (0 means pass)
+* Output : a report_validatefiles file validateFile error code (0 means pass)
     * format of output report file
     ```
-    md5sum	8635ebfb7a7307c323da365801caa2a0
-    validateFiles_errorcode	0
+    0
     ```
 
 This repo contains the source files for a docker image stored in duplexa/validatefiles:v1. (we will change the docker hub account soon)
@@ -37,6 +36,5 @@ Run the following in the container.
 run.sh <file> <type> <toggle>
 # file : input file, either gzipped or not
 # type : type of the file to be validate (e.g. 'fastq')
-# toggle : 0 : do not run validatefiles just check md5sum, 1: run validatefiles.
-# output file 'report' is generated.
+# output file 'report_validatefiles' is generated.
 ```
