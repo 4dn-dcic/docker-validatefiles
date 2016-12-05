@@ -33,7 +33,7 @@ docker push duplexa/validatefiles:v1
 ## Usage
 Run the following in the container.
 ```
-run.sh <file> <type> <toggle>
+run.sh <file> <type> 
 # file : input file, either gzipped or not
 # type : type of the file to be validate (e.g. 'fastq')
 # output file 'report_validatefiles' is generated.
